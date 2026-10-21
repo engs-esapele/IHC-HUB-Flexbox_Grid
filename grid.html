@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid - Aula de CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+  <header>
+    <h1>Grid</h1>
+    <a href="index.html">⬅ Voltar ao Hub</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>O que é CSS Grid?</h2>
+      <p>
+        O <strong>CSS Grid</strong> é um sistema de layout bidimensional: organiza elementos
+        em <strong>linhas e colunas</strong>. Ele é útil para criar galerias, painéis e páginas
+        que se adaptam a diferentes tamanhos de tela.
+      </p>
+      <p>As principais propriedades são:</p>
+      <ul class="lista-propriedades">
+        <li><code>display: grid;</code> — ativa o Grid no elemento contêiner.</li>
+        <li><code>grid-template-columns</code> — define as colunas e seus tamanhos.</li>
+        <li><code>grid-template-rows</code> — define as linhas e seus tamanhos.</li>
+        <li><code>gap</code> — define o espaço entre linhas e colunas.</li>
+        <li><code>grid-column</code> — define em quais colunas um item se posiciona ou se estende.</li>
+        <li><code>grid-row</code> — define em quais linhas um item se posiciona ou se estende.</li>
+        <li><code>justify-items</code> e <code>align-items</code> — alinham os itens dentro de suas células.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exemplo visual de Grid</h2>
+      <p>O contêiner abaixo usa três colunas iguais e um espaço de 12 pixels entre os itens.</p>
+      <div class="grid-demo" aria-label="Exemplo de grade com seis itens">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+      </div>
+      <pre><code>.grid-demo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}</code></pre>
+      <p><code>repeat(3, 1fr)</code> cria três colunas de mesma largura. A unidade <code>fr</code> divide o espaço disponível em frações.</p>
+    </section>
+
+    <section>
+      <h2>Listas em HTML</h2>
+      <p>As listas agrupam informações relacionadas. Existem três tipos comuns:</p>
+      <div class="tipos-lista">
+        <div class="tipo-lista">
+          <h3>Lista não ordenada</h3>
+          <p>Usa <code>ul</code> para criar a lista e <code>li</code> que define um item dentro de uma lista.
+             Os itens aparecem com marcadores.</p>
+          <ul class="exemplo-ul">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="tipo-lista">
+          <h3>Lista ordenada</h3>
+          <p>Usa <code>ol</code>para criar a lista e <code>li</code>. Os itens aparecem numerados.</p>
+          <ol class="exemplo-ol">
+            <li>Criar o HTML</li>
+            <li>Estilizar com CSS</li>
+            <li>Testar a página</li>
+          </ol>
+        </div>
+        <div class="tipo-lista">
+          <h3>Lista de descrição</h3>
+          <p>Usa <code>dl</code> que cria a lista, <code>dt</code> para o termo que será descrito e <code>dd</code> para suas descrições.</p>
+          <dl class="exemplo-dl">
+            <dt>HTML</dt>
+            <dd>Define a estrutura da página.</dd>
+            <dt>CSS</dt>
+            <dd>Controla a aparência da página.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Principais propriedades CSS para listas</h2>
+      <ul class="lista-propriedades">
+        <li><code>list-style-type</code> — muda o marcador, como <code>disc</code>, <code>circle</code>, <code>square</code> ou <code>decimal</code>.</li>
+        <li><code>list-style-image</code> — permite usar uma imagem como marcador.</li>
+      </ul>
+      <pre><code>ul {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 12px;
+}
+
+ol {
+  list-style-type: decimal;
+}</code></pre>
+    </section>
+
+    <section class="area-testes">
+      <h2>testes!!</h2>
+      <p>Experimente alterar as propriedades da classe <code>.grid-demo</code> no arquivo <strong>grid.css</strong>. Por exemplo, mude o número de colunas ou o valor de <code>gap</code>.</p>
+      <p>Você também pode mudar <code>list-style-type</code> nas classes das listas para testar outros marcadores.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Prof. Dionatan Inhoato Markiu — © 2025</p>
+  </footer>
+</body>
+</html>

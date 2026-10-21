@@ -1,0 +1,92 @@
+/* ===== Exemplo visual de CSS Grid ===== */
+.grid-demo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  padding: 16px;
+  border: 1px solid rgba(0, 216, 255, 0.6);
+  border-radius: 8px;
+  background: rgba(0, 216, 255, 0.15);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ===== Listas de propriedades ===== */
+.lista-propriedades {
+  padding-left: 24px;
+  line-height: 1.7;
+}
+
+.lista-propriedades li {
+  margin-bottom: 8px;
+}
+
+/* ===== Exemplos dos tipos de lista ===== */
+.tipos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.tipo-lista {
+  min-width: 0;
+  padding: 18px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tipo-lista h3 {
+  color: #00d8ff;
+  margin-bottom: 10px;
+}
+
+
+.exemplo-ul,
+.exemplo-ol {
+  padding-left: 24px;
+  line-height: 1.8;
+}
+
+.exemplo-ul {
+  list-style-type: square;
+}
+
+.exemplo-ol {
+  list-style-type: decimal;
+}
+
+.exemplo-dl dt {
+  color: #00d8ff;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+
+/* ===== Bloco de código ===== */
+pre {
+  margin: 16px 0;
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+pre code {
+  background: transparent;
+}
+
+/* ===== Área de testes ===== */
+.area-testes {
+  border: 1px solid rgba(0, 216, 255, 0.25);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox - Aula de CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+  <header>
+    <h1>Flexbox - Aula de CSS</h1>
+    <a href="index.html">Voltar ao início</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Flexbox</h2>
+      <p><strong>Flexbox</strong> é um modelo de layout do CSS que organiza elementos: em uma linha ou em uma coluna. Ele facilita o alinhamento
+         e a distribuição dos itens, inclusive quando o tamanho da tela muda.</p>
+      <p>Para ativar o Flexbox em um contêiner, use <code>display: flex;</code>. Os elementos filhos passam 
+        a ser chamados de itens flexíveis.</p>
+    </section>
+
+    <section>
+      <h2>Principais propriedades</h2>
+      <ul class="propriedades">
+        <li><code>display: flex;</code> — ativa o Flexbox no contêiner.</li>
+        <li><code>flex-direction</code> — define a direção dos itens: linha (<code>row</code>) ou coluna (<code>column</code>).</li>
+        <li><code>justify-content</code> — distribui os itens no eixo horizontal, como no início, no centro ou com espaço entre eles.</li>
+        <li><code>align-items</code> — alinha os itens no eixo vertical.</li>
+        <li><code>flex-wrap</code> — permite que os itens passem para outra linha quando não há espaço suficiente.</li>
+        <li><code>gap</code> — define o espaço entre os itens.</li>
+        <li><code>flex</code> — controla como um item cresce ou encolhe para ocupar o espaço disponível.</li>
+        <li><code>align-content</code> — distribui as linhas quando há várias linhas e espaço extra no eixo transversal.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exemplo</h2>
+      <p>Neste exemplo, <code>display: flex</code> coloca as caixas lado a lado,
+         <code>justify-content: space-around</code> distribui o espaço e <code>gap</code> cria uma distância entre elas.</p>
+      <pre><code>.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+}</code></pre>
+      <div class="flex-demo" aria-label="Exemplo de itens organizados com Flexbox">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Eixos do Flexbox</h2>
+      <p>O <strong>eixo principal</strong> acompanha a direção definida em <code>flex-direction</code>.
+         O <strong>eixo transversal</strong> fica perpendicular ao principal. Ao mudar de <code>row</code> para 
+         <code>column</code>, a direção usada por <code>justify-content</code> também muda.</p>
+    </section>
+
+    <section>
+      <h2>Área de testes</h2>
+            <p> <a href="https://flexboxfroggy.com/">Clique aqui para treinar com o sapinho 🐸</a> </p>
+
+      <p>Experimente alterar estes valores no CSS e observe como as caixas se reorganizam:</p>
+      <ul class="lista-testes">
+        <li><code>flex-direction: column;</code> — empilha os itens.</li>
+        <li><code>justify-content: center;</code> — centraliza no eixo principal.</li>
+        <li><code>align-items: flex-end;</code> — alinha no final do eixo transversal.</li>
+        <li><code>flex-wrap: nowrap;</code> — impede a quebra para outra linha.</li>
+        <li><code>gap: 24px;</code> — aumenta o espaço entre os itens.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por <strong> EU ISABELY </strong>  — © 2025</p>
+  </footer>
+</body>
+</html>

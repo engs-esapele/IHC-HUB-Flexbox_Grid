@@ -1,7 +1,34 @@
+:root {
+  --cor-destaques:#AFE1AF;
+  --cor-destaques-escuro: #C8AFE1;
+  --cor-fundo: #242a24;
+  --cor-fundo-secundario: #0c140c;
+}
 
+body {
+  background: linear-gradient(135deg, var(--cor-fundo), var(--cor-fundo-secundario));
+}
+
+header h1 {
+  color: var(--cor-destaques);
+}
+
+header a {
+  color: #fff;
+  background: var(--cor-destaques);
+}
+
+header a:hover {
+  background: var(--cor-destaques-escuro);
+}
+
+h2 {
+  color: var(--cor-destaques-escuro);
+  margin-bottom: 10px;
+}
 
 a{
-  color: antiqueWhite;
+  color: antiquewhite;
   font-size: large;
   font-weight: bold;
 }
@@ -36,9 +63,9 @@ pre code {
   gap: 12px;
   margin-top: 20px;
   padding: 20px;
-  border: 2px dashed rgba(0, 216, 255, 0.6);
+  border: 2px dashed rgba(149, 0, 255, 0.6);
   border-radius: 10px;
-  background: rgba(0, 216, 255, 0.05);
+  background: rgba(0, 255, 42, 0.05);
 }
 
 .flex-item {
@@ -47,9 +74,9 @@ pre code {
   justify-content: center;
   flex: 1 1 120px;
   padding: 16px;
-  border: 1px solid rgba(0, 216, 255, 0.5);
+  border: 1px solid rgba(153, 0, 255, 0.5);
   border-radius: 8px;
-  background: rgba(0, 216, 255, 0.14);
+  background: rgba(157, 0, 255, 0.14);
   color: #fff;
   font-weight: 600;
   text-align: center;

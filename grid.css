@@ -1,3 +1,32 @@
+:root {
+  --cor-destaques:#C8AFE1;
+  --cor-destaques-escuro: #AFE1AF;
+  --cor-fundo: #27212a;
+  --cor-fundo-secundario: #120b15;
+}
+
+body {
+  background: linear-gradient(135deg, var(--cor-fundo), var(--cor-fundo-secundario));
+}
+
+header h1 {
+  color: var(--cor-destaques);
+}
+
+header a {
+  color: #fff;
+  background: var(--cor-destaques);
+}
+
+header a:hover {
+  background: var(--cor-destaques-escuro);
+}
+
+h2 {
+  color: var(--cor-destaques-escuro);
+  margin-bottom: 10px;
+}
+
 a{
   color: antiquewhite;
   font-size: large;
@@ -20,9 +49,9 @@ a{
   justify-content: center;
   min-height: 90px;
   padding: 16px;
-  border: 1px solid rgba(0, 216, 255, 0.6);
+  border: 1px solid rgba(255, 0, 208, 0.6);
   border-radius: 8px;
-  background: rgba(0, 216, 255, 0.15);
+  background: rgba(255, 0, 144, 0.15);
   color: #fff;
   font-weight: 600;
   text-align: center;
@@ -55,7 +84,7 @@ a{
 }
 
 .tipo-lista h3 {
-  color: #00d8ff;
+  color: #ff00d0;
   margin-bottom: 10px;
 }
 
@@ -75,7 +104,7 @@ a{
 }
 
 .exemplo-dl dt {
-  color: #00d8ff;
+  color: #bf00ff;
   font-weight: 700;
   margin-top: 10px;
 }
@@ -96,5 +125,5 @@ pre code {
 
 /* ===== Área de testes ===== */
 .area-testes {
-  border: 1px solid rgba(0, 216, 255, 0.25);
+  border: 1px solid rgba(255, 0, 212, 0.25);
 }
